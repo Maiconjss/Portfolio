@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import { IDevPosts } from "../../interfaces/IDev";
+import { IMediumPosts } from "../../interfaces/IMediumPosts";
 import { Label } from "@fluentui/react";
 
 const Medium = () => {
-  const [posts, setPosts] = useState<IDevPosts[]>([]);
+  const [posts, setPosts] = useState<IMediumPosts[]>([]);
   const mediumUrl = "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@maicon.ferreira793";
 
   useEffect(() => {
