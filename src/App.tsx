@@ -7,7 +7,7 @@ import Medium from './components/Medium/Medium';
 const App = () => {
   return (
    <>
-    <Medium />
+   
    </>
   );
 }

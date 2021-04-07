@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import IDev, { IDevRepos } from "../../interfaces/IDev";
+import IDev from "../../interfaces/IDev";
 import { Label } from "@fluentui/react";
 
 const Profile = () => {

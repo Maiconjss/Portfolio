@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { IDevRepos } from "../../interfaces/IDevRepo";
 import { Label } from "@fluentui/react";
+import Button from "../Button/Button";
 
 const Projects = () => {
   const [repos, setRepos] = useState<IDevRepos[]>([]);
@@ -15,10 +16,14 @@ const Projects = () => {
     <div>
       {repos.map((repo) => {
         return (
-          <div style={{ display: "flex" }}>
+          <div>
             <Label>{repo.html_url}</Label>
             <Label>{repo.name}</Label>
             <Label>{repo.description}</Label>
+            <Button
+              text="acessar projeto"
+              handleClick={() => (window.location.href = repo.html_url)}
+            />
           </div>
         );
       })}
