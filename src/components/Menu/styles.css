@@ -1,0 +1,7 @@
+.closeIcon{
+    position: absolute;
+    top: 25px;
+    right: 0px;
+    cursor: pointer;
+    width: 30px;
+}
