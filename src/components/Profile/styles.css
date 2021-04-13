@@ -1,0 +1,44 @@
+.profile-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1260px;
+  margin: 0 auto;
+  margin-bottom: 300px;
+}
+
+.profile-image {
+  border-radius: 50%;
+  width: 250px;
+}
+
+.profile-skills {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo-skills {
+  width: 250px;
+  margin-right: 20px;
+}
+
+.logo-react {
+  width: 160px;
+  margin-right: 20px;
+}
+
+.profile-curious {
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1260px;
+}
+
+.profile-curious img {
+  width: 700px;
+  margin-right: 30px;
+  box-shadow: 0px 9px 33px -6px rgba(0,0,0,0.75);
+}

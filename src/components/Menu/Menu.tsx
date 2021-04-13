@@ -8,6 +8,7 @@ import {
   Nav,
   INavLinkGroup,
 } from "@fluentui/react";
+import { Link } from "react-router-dom";
 
 const navLinkGroups: INavLinkGroup[] = [
   {
@@ -15,9 +16,8 @@ const navLinkGroups: INavLinkGroup[] = [
     links: [
       {
         name: "Ver projetos ",
-        url: "http://msn.com",
+        url: "/projects",
         key: "key1",
-        target: "_blank",
       },
     ],
   },
@@ -26,9 +26,8 @@ const navLinkGroups: INavLinkGroup[] = [
     links: [
       {
         name: "Ver Posts",
-        url: "http://msn.com",
+        url: "/posts",
         key: "key1",
-        target: "_blank",
       },
     ],
   },
@@ -36,10 +35,9 @@ const navLinkGroups: INavLinkGroup[] = [
     name: "Sobre mim",
     links: [
       {
-        name: "Minha história",
-        url: "http://msn.com",
+        name: "Quem sou eu",
+        url: "/about",
         key: "key3",
-        target: "_blank",
       },
     ],
   },
@@ -66,6 +64,7 @@ const Menu = () => {
 
         <Nav groups={navLinkGroups} />
       </Panel>
+
     </div>
   );
 };
