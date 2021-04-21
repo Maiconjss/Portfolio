@@ -8,7 +8,6 @@ import {
   Nav,
   INavLinkGroup,
 } from "@fluentui/react";
-import { Link } from "react-router-dom";
 
 const navLinkGroups: INavLinkGroup[] = [
   {
@@ -32,11 +31,11 @@ const navLinkGroups: INavLinkGroup[] = [
     ],
   },
   {
-    name: "Sobre mim",
+    name: "Fale comigo",
     links: [
       {
-        name: "Quem sou eu",
-        url: "/about",
+        name: "Envie uma mensagem",
+        url: "/contact",
         key: "key3",
       },
     ],
@@ -53,13 +52,12 @@ const Menu = () => {
       <DefaultButton text="MENU" onClick={openPanel} />
 
       <Panel
-        headerText="Maicon Ferreira"
         isOpen={isOpen}
         type={PanelType.customNear}
         customWidth={"340px"}
       >
         <div className="closeIcon" onClick={dismissPanel}>
-          <h1> X </h1>
+          <h1> x </h1>
         </div>
 
         <Nav groups={navLinkGroups} />

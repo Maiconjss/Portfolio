@@ -1,5 +1,6 @@
 import React from 'react';
 import {DefaultButton} from '@fluentui/react';
+import './styles.css';
 
 interface IButton {
     text: string;
@@ -9,7 +10,7 @@ interface IButton {
 const Button = (IButton:IButton) => {
 
     return(
-        <DefaultButton text={IButton.text} onClick={IButton.handleClick} />
+        <DefaultButton className="btn" text={IButton.text} onClick={IButton.handleClick} />
     )
 }
 
